@@ -1,0 +1,16 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Favoritos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <p *ngIf="datalocalService.noticias.length === 0" class="center">Agregue Favoritos</p>
+
+  <app-noticias [noticias]="datalocalService.noticias" [enFavoritos]="true"></app-noticias>
+
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
+</ion-content>
